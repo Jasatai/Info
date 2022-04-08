@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 	/**
 	 * @author Jasatai
 	 * @version 0.1
@@ -13,22 +12,23 @@ public class DMS {
 	 * 4	anzahl persohnen
 	 */
 	private int[][] data = new int[10000][5];
-	public void saveData(int bungalowNummer, int startWoche, int endWoche, int anzahlPersohnen) {
+	public void saveData(int bungalowNummer, int startWoche, int endWoche, int anzahlPersonen) {
 		// find next emty position
 		int temp = 0;
-		while (data[temp][0] == null) {
+		while (data[temp][0] == 0) {
 			temp++;
 		}
 		temp++;
 		
-		data[temp][0] = this.temp;
-		data[temp][1] = this.bungalowNummer;
-		data[temp][2] = this.startWoche;
-		data[temp][3] = this.endWoche;
-		data[temp][4] = this.anzahlPersonen;
+		data[temp][0] = temp;
+		data[temp][1] = bungalowNummer;
+		data[temp][2] = startWoche;
+		data[temp][3] = endWoche;
+		data[temp][4] = anzahlPersonen;
 		
 	}
 	public int[][] recall() {
+		return data;
 	
 	}
 	
