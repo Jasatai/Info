@@ -39,24 +39,7 @@ public class Bungalow extends JFrame {
 			}
 		});
 	}
-	/*
-	String[] array = new String[12];
-    
-    //Data Transmision
-    public int getUserInteraction() {
-        return 0;
-    }
-    public boolean getUpdate() {
-        return update;
-    }
-    public void resetUpdate() {
-        update = false;
-    }
 
-    public int[] getData() {
-        return null;
-    }
-	*/
 	/**
 	 * Create the frame.
 	 */
@@ -76,7 +59,7 @@ public class Bungalow extends JFrame {
 		VerfuegbarkeitsPanel.setLayout(null);
 		
 		JLabel lblVerfuegbarkeit = new JLabel("Verfuegbarkeit:");
-		lblVerfuegbarkeit.setBounds(78, 5, 125, 22);
+		lblVerfuegbarkeit.setBounds(94, 10, 125, 22);
 		lblVerfuegbarkeit.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		VerfuegbarkeitsPanel.add(lblVerfuegbarkeit);
 		
@@ -128,17 +111,18 @@ public class Bungalow extends JFrame {
 		VerfuegbarkeitsPanel.add(lblFreiebungalows);
 		
 		JTextPane textFreieBungalows = new JTextPane();
-		textFreieBungalows.setBounds(39, 207, 248, 312);
+		textFreieBungalows.setEditable(false);
+		textFreieBungalows.setBounds(54, 215, 248, 312);
 		VerfuegbarkeitsPanel.add(textFreieBungalows);
 		
 		Panel BuchungsPanel = new Panel();
 		BuchungsPanel.setBackground(Color.LIGHT_GRAY);
-		BuchungsPanel.setBounds(472, 339, 321, 271);
+		BuchungsPanel.setBounds(462, 144, 369, 371);
 		contentPane.add(BuchungsPanel);
 		BuchungsPanel.setLayout(null);
 		
 		JLabel lblBuchung = new JLabel("Buchung:");
-		lblBuchung.setBounds(114, 10, 78, 22);
+		lblBuchung.setBounds(151, 10, 78, 22);
 		lblBuchung.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		BuchungsPanel.add(lblBuchung);
 		
@@ -161,11 +145,11 @@ public class Bungalow extends JFrame {
 		BuchungsPanel.add(textWochePane_2);
 		
 		JTextPane textJahrPane_1 = new JTextPane();
-		textJahrPane_1.setBounds(177, 46, 52, 22);
+		textJahrPane_1.setBounds(209, 46, 52, 22);
 		BuchungsPanel.add(textJahrPane_1);
 		
 		JTextPane textJahrPane_2 = new JTextPane();
-		textJahrPane_2.setBounds(176, 88, 53, 22);
+		textJahrPane_2.setBounds(208, 88, 53, 22);
 		BuchungsPanel.add(textJahrPane_2);
 		
 		JLabel lblWoche_2 = new JLabel("Woche:");
@@ -173,7 +157,7 @@ public class Bungalow extends JFrame {
 		BuchungsPanel.add(lblWoche_2);
 		
 		JLabel lblJahr_2 = new JLabel("Jahr:");
-		lblJahr_2.setBounds(176, 35, 45, 13);
+		lblJahr_2.setBounds(208, 35, 45, 13);
 		BuchungsPanel.add(lblJahr_2);
 		
 		JLabel lblWoche_3 = new JLabel("Woche:");
@@ -181,12 +165,12 @@ public class Bungalow extends JFrame {
 		BuchungsPanel.add(lblWoche_3);
 		
 		JLabel lblJahr_3 = new JLabel("Jahr:");
-		lblJahr_3.setBounds(176, 78, 45, 13);
+		lblJahr_3.setBounds(208, 78, 45, 13);
 		BuchungsPanel.add(lblJahr_3);
 		
 		JLabel lblBuchungenMaximaljahre = new JLabel("Buchungen maximal 10 Jahre in die Zukunft.");
 		lblBuchungenMaximaljahre.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblBuchungenMaximaljahre.setBounds(29, 108, 244, 47);
+		lblBuchungenMaximaljahre.setBounds(87, 101, 244, 47);
 		BuchungsPanel.add(lblBuchungenMaximaljahre);
 		
 		JButton btnJetztBuchen = new JButton("Jetzt Buchen");
@@ -196,7 +180,7 @@ public class Bungalow extends JFrame {
 		});
 		btnJetztBuchen.setBackground(UIManager.getColor("Button.darkShadow"));
 		btnJetztBuchen.setFont(new Font("Tahoma", Font.BOLD, 14));
-		btnJetztBuchen.setBounds(79, 222, 168, 39);
+		btnJetztBuchen.setBounds(109, 301, 168, 39);
 		BuchungsPanel.add(btnJetztBuchen);
 		
 		JTextPane textAnzahlPersonenPane_1 = new JTextPane();
@@ -217,59 +201,50 @@ public class Bungalow extends JFrame {
 		lblAnzahlPersonen.setBounds(54, 190, 113, 22);
 		BuchungsPanel.add(lblAnzahlPersonen);
 		
+		JLabel lblBuchungsnummer = new JLabel("Buchungsnummer:");
+		lblBuchungsnummer.setBounds(109, 234, 152, 29);
+		BuchungsPanel.add(lblBuchungsnummer);
+		lblBuchungsnummer.setFont(new Font("Tahoma", Font.BOLD, 14));
+		
+		JTextPane txtpnBuchungsnummer = new JTextPane();
+		txtpnBuchungsnummer.setEditable(false);
+		txtpnBuchungsnummer.setBounds(99, 262, 178, 29);
+		BuchungsPanel.add(txtpnBuchungsnummer);
+		
 		Panel InformationPanel = new Panel();
 		InformationPanel.setBackground(Color.LIGHT_GRAY);
-		InformationPanel.setBounds(472, 48, 649, 253);
+		InformationPanel.setBounds(861, 48, 321, 556);
 		contentPane.add(InformationPanel);
 		InformationPanel.setLayout(null);
 		
 		JLabel lblInformationen = new JLabel("Informationen:");
-		lblInformationen.setBounds(260, 5, 121, 22);
+		lblInformationen.setBounds(102, 10, 121, 22);
 		lblInformationen.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		InformationPanel.add(lblInformationen);
 		
 		JTextPane textStatusPane_1 = new JTextPane();
-		textStatusPane_1.setBounds(287, 66, 327, 158);
+		textStatusPane_1.setEditable(false);
+		textStatusPane_1.setBounds(37, 231, 258, 233);
 		InformationPanel.add(textStatusPane_1);
 		
 		JLabel lblStatus = new JLabel("Status:");
 		lblStatus.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblStatus.setBounds(287, 43, 75, 22);
+		lblStatus.setBounds(45, 199, 75, 22);
 		InformationPanel.add(lblStatus);
 		
 		JLabel lblKundennummer = new JLabel("Buchungsnummer:");
 		lblKundennummer.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblKundennummer.setBounds(50, 101, 121, 22);
+		lblKundennummer.setBounds(45, 101, 121, 22);
 		InformationPanel.add(lblKundennummer);
 		
 		JTextPane textBuchungsnummerPane_2 = new JTextPane();
-		textBuchungsnummerPane_2.setBounds(50, 130, 196, 31);
+		textBuchungsnummerPane_2.setBounds(55, 134, 196, 31);
 		InformationPanel.add(textBuchungsnummerPane_2);
 		
-		Panel StonierungsPanel = new Panel();
-		StonierungsPanel.setBackground(Color.LIGHT_GRAY);
-		StonierungsPanel.setBounds(834, 339, 287, 271);
-		contentPane.add(StonierungsPanel);
-		StonierungsPanel.setLayout(null);
-		
-		JLabel lblStornierung = new JLabel("Stornierung:");
-		lblStornierung.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblStornierung.setBounds(69, 10, 145, 29);
-		StonierungsPanel.add(lblStornierung);
-		
-		JTextPane txtpnBuchungsnummer = new JTextPane();
-		txtpnBuchungsnummer.setBounds(62, 116, 178, 29);
-		StonierungsPanel.add(txtpnBuchungsnummer);
-		
-		JLabel lblBuchungsnummer = new JLabel("Buchungsnummer:");
-		lblBuchungsnummer.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblBuchungsnummer.setBounds(62, 89, 152, 29);
-		StonierungsPanel.add(lblBuchungsnummer);
-		
 		JButton btnHierStonieren = new JButton("Hier Stonieren");
+		btnHierStonieren.setBounds(102, 488, 145, 36);
+		InformationPanel.add(btnHierStonieren);
 		btnHierStonieren.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnHierStonieren.setBackground(UIManager.getColor("Button.darkShadow"));
-		btnHierStonieren.setBounds(69, 173, 145, 36);
-		StonierungsPanel.add(btnHierStonieren);
 	}
 }
