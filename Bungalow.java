@@ -39,7 +39,24 @@ public class Bungalow extends JFrame {
 			}
 		});
 	}
+	/*
+	String[] array = new String[12];
+    
+    //Data Transmision
+    public int getUserInteraction() {
+        return 0;
+    }
+    public boolean getUpdate() {
+        return update;
+    }
+    public void resetUpdate() {
+        update = false;
+    }
 
+    public int[] getData() {
+        return null;
+    }
+	*/
 	/**
 	 * Create the frame.
 	 */
