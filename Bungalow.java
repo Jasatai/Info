@@ -26,6 +26,23 @@ public class Bungalow extends JFrame {
 	private JPanel contentPane;
 	public boolean buttonJetztBuchen = false;
 	public boolean buttonJHierStonieren = false;
+	
+	private JTextPane txtpnWoche1 ;	
+	private JTextPane  textWoche ;
+	private JTextPane txtpnJahr;
+	private JTextPane textJahr_1;
+	private JTextPane textFreieBungalows;
+	private JTextPane textWochePane_1;
+	private JTextPane textWochePane_2;
+	private JTextPane textJahrPane_1;
+	private JTextPane textJahrPane_2;
+	private JTextPane textAnzahlPersonenPane_1;
+	private JTextPane txtpnBungalowNummer;
+	private JTextPane txtpnBuchungsnummer;
+	private JTextPane textStatusPane_1;
+	private JTextPane textBuchungsnummerPane_2;
+	
+	
 
 	/**
 	 * Launch the application.
@@ -83,12 +100,12 @@ public class Bungalow extends JFrame {
 		VerfuegbarkeitsPanel.add(lblAbreiseLable);
 		
 		//eingabefeldAnreiseUndAbreise
-		JTextPane txtpnWoche1 = new JTextPane();
+		txtpnWoche1 = new JTextPane();
 		txtpnWoche1.setBounds(112, 67, 52, 22);
 		VerfuegbarkeitsPanel.add(txtpnWoche1);
 		getContentPane().add(txtpnWoche1);
 		
-		JTextPane textWoche = new JTextPane();
+		textWoche = new JTextPane();
 		textWoche.setBounds(112, 110, 52, 22);
 		VerfuegbarkeitsPanel.add(textWoche);
 		getContentPane().add(textWoche);
@@ -103,11 +120,12 @@ public class Bungalow extends JFrame {
 		VerfuegbarkeitsPanel.add(lblWoche_1);
 		
 		//eingaben
-		JTextPane txtpnJahr = new JTextPane();
+		txtpnJahr = new JTextPane();
 		txtpnJahr.setBounds(174, 67, 52, 22);
 		VerfuegbarkeitsPanel.add(txtpnJahr);
+		getContentPane().add(txtpnJahr);
 		
-		JTextPane textJahr_1 = new JTextPane();
+		textJahr_1 = new JTextPane();
 		textJahr_1.setBounds(174, 110, 52, 22);
 		VerfuegbarkeitsPanel.add(textJahr_1);
 		getContentPane().add(textJahr_1);
@@ -127,7 +145,7 @@ public class Bungalow extends JFrame {
 		VerfuegbarkeitsPanel.add(lblFreiebungalows);
 		
 		
-		JTextPane textFreieBungalows = new JTextPane();
+		textFreieBungalows = new JTextPane();
 		textFreieBungalows.setEditable(false);
 		textFreieBungalows.setBounds(28, 207, 274, 320);
 		VerfuegbarkeitsPanel.add(textFreieBungalows);
@@ -155,22 +173,22 @@ public class Bungalow extends JFrame {
 		lblAbreise.setBounds(41, 88, 63, 22);
 		BuchungsPanel.add(lblAbreise);
 		
-		JTextPane textWochePane_1 = new JTextPane();
+		textWochePane_1 = new JTextPane();
 		textWochePane_1.setBounds(105, 46, 52, 22);
 		BuchungsPanel.add(textWochePane_1);
 		getContentPane().add(textWochePane_1);
 		
-		JTextPane textWochePane_2 = new JTextPane();
+		textWochePane_2 = new JTextPane();
 		textWochePane_2.setBounds(105, 88, 52, 22);
 		BuchungsPanel.add(textWochePane_2);
 		getContentPane().add(textWochePane_2);
 		
-		JTextPane textJahrPane_1 = new JTextPane();
+		textJahrPane_1 = new JTextPane();
 		textJahrPane_1.setBounds(209, 46, 52, 22);
 		BuchungsPanel.add(textJahrPane_1);
 		getContentPane().add(textJahrPane_1);
 		
-		JTextPane textJahrPane_2 = new JTextPane();
+		textJahrPane_2 = new JTextPane();
 		textJahrPane_2.setBounds(208, 88, 53, 22);
 		BuchungsPanel.add(textJahrPane_2);
 		getContentPane().add(textJahrPane_2);
@@ -210,12 +228,12 @@ public class Bungalow extends JFrame {
 		
 		
 		
-		JTextPane textAnzahlPersonenPane_1 = new JTextPane();
+		textAnzahlPersonenPane_1 = new JTextPane();
 		textAnzahlPersonenPane_1.setBounds(177, 190, 52, 22);
 		BuchungsPanel.add(textAnzahlPersonenPane_1);
 		getContentPane().add(textAnzahlPersonenPane_1);
 		
-		JTextPane txtpnBungalowNummer = new JTextPane();
+		txtpnBungalowNummer = new JTextPane();
 		txtpnBungalowNummer.setBounds(177, 156, 52, 24);
 		BuchungsPanel.add(txtpnBungalowNummer);
 		getContentPane().add(txtpnBungalowNummer);
@@ -236,7 +254,7 @@ public class Bungalow extends JFrame {
 		lblBuchungsnummer.setFont(new Font("Tahoma", Font.BOLD, 14));
 		
 		//Buchungsnummer
-		JTextPane txtpnBuchungsnummer = new JTextPane();
+		txtpnBuchungsnummer = new JTextPane();
 		txtpnBuchungsnummer.setEditable(false);
 		txtpnBuchungsnummer.setBounds(99, 262, 178, 29);
 		BuchungsPanel.add(txtpnBuchungsnummer);
@@ -252,7 +270,7 @@ public class Bungalow extends JFrame {
 		lblInformationen.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		InformationPanel.add(lblInformationen);
 		
-		JTextPane textStatusPane_1 = new JTextPane();
+		textStatusPane_1 = new JTextPane();
 		textStatusPane_1.setEditable(false);
 		textStatusPane_1.setBounds(37, 231, 258, 233);
 		InformationPanel.add(textStatusPane_1);
@@ -268,7 +286,7 @@ public class Bungalow extends JFrame {
 		lblKundennummer.setBounds(45, 101, 121, 22);
 		InformationPanel.add(lblKundennummer);
 		
-		JTextPane textBuchungsnummerPane_2 = new JTextPane();
+		textBuchungsnummerPane_2 = new JTextPane();
 		textBuchungsnummerPane_2.setBounds(55, 134, 196, 31);
 		InformationPanel.add(textBuchungsnummerPane_2);
 		getContentPane().add(textBuchungsnummerPane_2);
@@ -285,5 +303,134 @@ public class Bungalow extends JFrame {
 		btnHierStonieren.setBackground(UIManager.getColor("Button.darkShadow"));
 		
 
+	}
+
+	public JTextPane getTxtpnWoche1() {
+		return txtpnWoche1;
+	}
+
+	public void setTxtpnWoche1(JTextPane txtpnWoche1) {
+		this.txtpnWoche1 = txtpnWoche1;
+	}
+
+	public JTextPane getTextWoche() {
+		return textWoche;
+	}
+
+	public void setTextWoche(JTextPane textWoche) {
+		this.textWoche = textWoche;
+	}
+
+	public JTextPane getTxtpnJahr() {
+		return txtpnJahr;
+	}
+
+	public void setTxtpnJahr(JTextPane txtpnJahr) {
+		this.txtpnJahr = txtpnJahr;
+	}
+
+	public JTextPane getTextJahr_1() {
+		return textJahr_1;
+	}
+
+	public void setTextJahr_1(JTextPane textJahr_1) {
+		this.textJahr_1 = textJahr_1;
+	}
+
+	public JTextPane getTextFreieBungalows() {
+		return textFreieBungalows;
+	}
+
+	public void setTextFreieBungalows(JTextPane textFreieBungalows) {
+		this.textFreieBungalows = textFreieBungalows;
+	}
+
+	public JTextPane getTextWochePane_1() {
+		return textWochePane_1;
+	}
+
+	public void setTextWochePane_1(JTextPane textWochePane_1) {
+		this.textWochePane_1 = textWochePane_1;
+	}
+
+	public JTextPane getTextWochePane_2() {
+		return textWochePane_2;
+	}
+
+	public void setTextWochePane_2(JTextPane textWochePane_2) {
+		this.textWochePane_2 = textWochePane_2;
+	}
+
+	public JTextPane getTextJahrPane_1() {
+		return textJahrPane_1;
+	}
+
+	public void setTextJahrPane_1(JTextPane textJahrPane_1) {
+		this.textJahrPane_1 = textJahrPane_1;
+	}
+
+	public JTextPane getTextJahrPane_2() {
+		return textJahrPane_2;
+	}
+
+	public void setTextJahrPane_2(JTextPane textJahrPane_2) {
+		this.textJahrPane_2 = textJahrPane_2;
+	}
+
+	public JTextPane getTextAnzahlPersonenPane_1() {
+		return textAnzahlPersonenPane_1;
+	}
+
+	public void setTextAnzahlPersonenPane_1(JTextPane textAnzahlPersonenPane_1) {
+		this.textAnzahlPersonenPane_1 = textAnzahlPersonenPane_1;
+	}
+
+	public JTextPane getTxtpnBungalowNummer() {
+		return txtpnBungalowNummer;
+	}
+
+	public void setTxtpnBungalowNummer(JTextPane txtpnBungalowNummer) {
+		this.txtpnBungalowNummer = txtpnBungalowNummer;
+	}
+
+	public JTextPane getTxtpnBuchungsnummer() {
+		return txtpnBuchungsnummer;
+	}
+
+	public void setTxtpnBuchungsnummer(JTextPane txtpnBuchungsnummer) {
+		this.txtpnBuchungsnummer = txtpnBuchungsnummer;
+	}
+
+	public JTextPane getTextStatusPane_1() {
+		return textStatusPane_1;
+	}
+
+	public void setTextStatusPane_1(JTextPane textStatusPane_1) {
+		this.textStatusPane_1 = textStatusPane_1;
+	}
+
+	public JTextPane getTextBuchungsnummerPane_2() {
+		return textBuchungsnummerPane_2;
+	}
+
+	public void setTextBuchungsnummerPane_2(JTextPane textBuchungsnummerPane_2) {
+		this.textBuchungsnummerPane_2 = textBuchungsnummerPane_2;
+	}
+
+	public boolean isButtonJetztBuchen() {
+		return buttonJetztBuchen;
+	}
+
+	public void setButtonJetztBuchen(boolean buttonJetztBuchen) {
+		this.buttonJetztBuchen = buttonJetztBuchen;
+	}
+
+	public boolean isButtonJHierStonieren() {
+		return buttonJHierStonieren;
+	}
+
+	public void setButtonJHierStonieren(boolean buttonJHierStonieren) {
+		this.buttonJHierStonieren = buttonJHierStonieren;
+		
 	}
 }
