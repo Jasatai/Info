@@ -1,0 +1,15 @@
+text,font,toolTip,x,y,width,height,editable
+,-1,Anreise Woche,160,130,55,25,true
+,-1,Anreise Jahr,220,130,55,25,true
+,-1,Abreise Woche,160,170,55,25,true
+,-1,Abreise Jahr,220,170,55,25,true
+bitte reise daten eingeben,-1,Die freien Bungalows fuer den angegebenen zeitraum,80,260,280,320,false
+,-1,Anreise Woche,620,230,55,25,true
+,-1,Anreise Jahr,680,230,55,25,true
+,-1,Abreise Woche,620,270,55,25,true
+,-1,Abreise Jahr,680,270,55,25,true
+,-1,Bungalow Nummer,620,310,55,25,true
+,-1,Anzahl Personen,620,350,55,25,true
+,-1,Ihre Buchungsnummer. Bitte merken,520,410,220,100,false
+,-1,Ihre Buchungsnummer,870,180,180,25,true
+Bitte Buchungsnummer eingeben,-1,Informationen zu ihrer Buchung,870,260,280,250,false

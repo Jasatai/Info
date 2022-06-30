@@ -1,0 +1,18 @@
+text,font,toolTip,x,y,width,height
+Verfuegbarkeit:,0,pruefen sie hier ihre Verfuegbarkeit,130,60,180,30
+Anreise:,1,,100,125,50,30
+Woche,-1,,170,110,50,20
+Jahr,-1,,230,110,50,20
+Abreise:,1,,100,165,50,30
+Freie Bungalows:,2,,90,230,150,30
+Buchung:,0,Hier Buchen,590,160,120,30
+Anreise:,1,,560,225,50,30
+Woche,-1,,630,210,50,20
+Jahr,-1,,690,210,50,20
+Abreise:,1,,560,265,50,30
+Bungalow:,1,,545,305,70,30
+Anzahl Personen:,1,,505,345,120,30
+Buchungsnummer:,3,,550,380,150,30
+Informationen:,0,Erhalten sie hier infromationen zu ihrer buchung,900,60,180,30
+Buchungsnummer:,1,,880,150,180,20
+Status:,2,,880,230,50,20
